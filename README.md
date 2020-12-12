@@ -99,4 +99,18 @@ Energy "Load" = The load factor percentage is derived by dividing the total kilo
 
 Energy "Reserves" = Calculated unused physical energy sources. Source examples are coal, gas, and oil. Known to exist with reasonable certainty.
 
-Energy "Capacity Factors" = It basically measures how often a plant is running at maximum power. A plant with a capacity factor of 100% means it's producing power all of the time. Nuclear has the highest capacity factor of any other energy source—producing reliable, carbon-free power more than 92% of the time in 2016
+Energy "Capacity Factors" = It basically measures how often a plant is running at maximum power. A plant with a capacity factor of 100% means it's producing power all of the time. Nuclear has the highest capacity factor of any other energy source—producing reliable, carbon-free power more than 92% of the time in 2016.
+
+
+Goals:
+ - 
+ - % of total need can be provided by solar at the currently capacity
+ Main (from Eric): How much of a state's energy requirements can be met by solar?
+    - State's current energy consumption 
+    - Current solar consumption per state
+    - Current solar infrastructure of the states
+    - In a point in time, solar currently is providing _% of the current energy needs of these states
+
+    - Monthy consumption per state by sector
+
+Table 1 - average price by sector (remember to remove the summary rows for the regions)
