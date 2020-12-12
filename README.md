@@ -91,3 +91,12 @@ How to run your project - given your github repo, how would the instructional te
 The report is estimated to be 500 words or less and should be in the README of your github repo. Although each group will have a single repo, every group member must submit a link to Bootcampspot. No presentation and no presentation materials are required.
 
 
+Key Terms:
+
+Energy "Price" =  The average electricity rate is 13.19 cents per kilowatt hour (kWh). The average price a residential customer in the United States pays for electricity is 13.31 cents per kWh.
+
+Energy "Load" = The load factor percentage is derived by dividing the total kilowatt-hours (kWh) consumed in a designated period by the product of the maximum demand in kilowatts (kW) and the number of hours in the period.
+
+Energy "Reserves" = Calculated unused physical energy sources. Source examples are coal, gas, and oil. Known to exist with reasonable certainty.
+
+Energy "Capacity Factors" = It basically measures how often a plant is running at maximum power. A plant with a capacity factor of 100% means it's producing power all of the time. Nuclear has the highest capacity factor of any other energy source—producing reliable, carbon-free power more than 92% of the time in 2016
