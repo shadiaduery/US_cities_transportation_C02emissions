@@ -114,3 +114,19 @@ Goals:
     - Monthy consumption per state by sector
 
 Table 1 - average price by sector (remember to remove the summary rows for the regions)
+Table 2 - Annual monthly billing by state
+Table 3 - Nataliias data set
+Table 4 - State name and state ID
+
+
+
+Assignments for before Monday:
+- Update Readme (Anna)
+- Insert the Table 5.6.A. Average Price of Electricity to Ultimate Customers by End-Use Sector in jupyter notebook and clean out regional summary (Shadia)
+- Upload that 20 year record csv to our repo (Nataliia)
+- Create example schema map for Monday (Priya)
+
+
+- For Monday:
+- Finalize database mapping (Monday together)
+- 
