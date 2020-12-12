@@ -25,8 +25,13 @@ Assignments for before Monday:
 - Create example schema map for Monday (Priya)
 
 
-- For Monday:
+For Monday:
 - Finalize database mapping (Monday together)
+
+For Wednesday:
+- Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.
+
+
 
 
 Other notes:
