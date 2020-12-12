@@ -23,10 +23,13 @@ Assignments for before Monday:
 - Insert the Table 5.6.A. Average Price of Electricity to Ultimate Customers by End-Use Sector in jupyter notebook and clean out regional summary (Shadia)
 - Upload that 20 year record csv to our repo (Nataliia)
 - Create example schema map for Monday (Priya)
+- Create Table 4 - State name and state ID (Vincent)
 
 
 For Monday:
 - Finalize database mapping (Monday together)
+- Get final tables created and loaded in Postgress
+- Create queries
 
 For Wednesday:
 - Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.
