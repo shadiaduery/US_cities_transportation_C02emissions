@@ -2,6 +2,45 @@
 
 Group Team Members: Anna Rischitelli, Priya Anulacharam, Nataliia Sokolova, Vincent Durcan, and Shadia Duery
 
+Question: 
+1) What is a state's energy demand?
+2) What are the sources of energy per state being used? (Wind, coal, gas, solar, etc.)
+Bonus** 2A) How much of a state's energy requirements can be met by solar?
+
+
+Table 1 - average price by sector (remember to remove the summary rows for the regions)
+Table 2 - Annual monthly billing by state
+Table 3 - Nataliias data set
+Table 4 - State name and state ID
+
+Key points:
+- Demand overtime by sector
+- Type of energy sources over time
+
+
+Assignments for before Monday:
+- Update Readme (Anna)
+- Insert the Table 5.6.A. Average Price of Electricity to Ultimate Customers by End-Use Sector in jupyter notebook and clean out regional summary (Shadia)
+- Upload that 20 year record csv to our repo (Nataliia)
+- Create example schema map for Monday (Priya)
+
+
+- For Monday:
+- Finalize database mapping (Monday together)
+
+
+Other notes:
+Goals:
+ - % of total need can be provided by solar at the currently capacity
+ Main (from Eric): How much of a state's energy requirements can be met by solar?
+    - State's current energy consumption 
+    - Current solar consumption per state
+    - Current solar infrastructure of the states
+    - In a point in time, solar currently is providing _% of the current energy needs of these states
+
+    - Monthy consumption per state by sector
+
+-------------------------------------------
 Business Questions:
 
 Do rates of covid19 differ based on local policies implemented (where do we get data of locked down period)
@@ -102,31 +141,3 @@ Energy "Reserves" = Calculated unused physical energy sources. Source examples a
 Energy "Capacity Factors" = It basically measures how often a plant is running at maximum power. A plant with a capacity factor of 100% means it's producing power all of the time. Nuclear has the highest capacity factor of any other energy source—producing reliable, carbon-free power more than 92% of the time in 2016.
 
 
-Goals:
- - 
- - % of total need can be provided by solar at the currently capacity
- Main (from Eric): How much of a state's energy requirements can be met by solar?
-    - State's current energy consumption 
-    - Current solar consumption per state
-    - Current solar infrastructure of the states
-    - In a point in time, solar currently is providing _% of the current energy needs of these states
-
-    - Monthy consumption per state by sector
-
-Table 1 - average price by sector (remember to remove the summary rows for the regions)
-Table 2 - Annual monthly billing by state
-Table 3 - Nataliias data set
-Table 4 - State name and state ID
-
-
-
-Assignments for before Monday:
-- Update Readme (Anna)
-- Insert the Table 5.6.A. Average Price of Electricity to Ultimate Customers by End-Use Sector in jupyter notebook and clean out regional summary (Shadia)
-- Upload that 20 year record csv to our repo (Nataliia)
-- Create example schema map for Monday (Priya)
-
-
-- For Monday:
-- Finalize database mapping (Monday together)
-- 
