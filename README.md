@@ -8,10 +8,10 @@ Question:
 Bonus** 2A) How much of a state's energy requirements can be met by solar?
 
 
-Table 1 - average price by sector (remember to remove the summary rows for the regions)
-Table 2 - Annual monthly billing by state
-Table 3 - Nataliias data set
-Table 4 - State name and state ID
+- Table 1: average price by sector (remember to remove the summary rows for the regions)
+- Table 2: Annual monthly billing by state
+- Table 3: Nataliias data set
+- Table 4: State name and state ID
 
 Key points:
 - Demand overtime by sector
