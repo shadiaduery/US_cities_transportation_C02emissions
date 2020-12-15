@@ -10,7 +10,7 @@ Group Team Members: Anna Rischitelli, Priya Anulacharam, Nataliia Sokolova, Vinc
 - Table 2: Annual Electricity Generation (annual_generation_state_clean)
 - Table 3: Existing Electrical Capacity (existcapacity_annual_clean.csv)
 
-## Project Report**:
+## Project Report:
 *Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.*
 
 **EXTRACT**: 
