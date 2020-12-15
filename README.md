@@ -17,7 +17,7 @@ EXTRACT:
 We pulled our data from the U.S. Energy Information Administration (eia). The eia has an entire section of data on U.S. electricity information including electric power plants, capacity, generation, fuel consumption, sales, prices and customers.
 
 TRANSFORM:
-state
+StateNameAndID.csv
 - created a state ID table with state name and state ID to use as primary keys and connect other databases
 
 yearly_generation_pd
