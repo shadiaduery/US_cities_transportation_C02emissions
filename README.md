@@ -6,8 +6,8 @@ Datasources:
 - US Energy Information Administration
 
 Database Design:
-- Table 1: average price by sector (remember to remove the summary rows for the regions)
-- Table 2: Annual monthly billing by state
+- Table 1: State Name and State ID (StateNameAndID.csv)
+- Table 2: Annual Electricity Generation (annual_generation_state_clean)
 - Table 3: Nataliias data set
 - Table 4: State name and state ID
 
