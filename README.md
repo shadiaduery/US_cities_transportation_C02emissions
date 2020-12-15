@@ -13,21 +13,17 @@ Database Design:
 Project Report:
 #Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.
 
-----------
+--------------------------------------------------------------------------
 Looking ahead...
 
 Our Database Design was chosen to help us answer these potential questions for Project #3: 
 1) What is a state's energy demand?
 2) What are the sources of energy per state being used? (Wind, coal, gas, solar, etc.)
-Bonus** 2A) How much of a state's energy requirements can be met by solar?
+3)
+4) How much of a state's energy requirements can be met by solar?
 
 
-
-
-Key points:
-- Demand overtime by sector
-- Type of energy sources over time
-
+--------------------------------------------------------------------------
 
 Assignments for before Monday:
 - Update Readme (Anna)
