@@ -3,6 +3,7 @@
 Group Team Members: Anna Rischitelli, Priya Anulacharam, Nataliia Sokolova, Vincent Durcan, and Shadia Duery
 
 Datasources:
+- US Energy 
 
 Database Design:
 - Table 1: average price by sector (remember to remove the summary rows for the regions)
@@ -13,7 +14,8 @@ Database Design:
 Project Report:
 #Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.
 
-EXTRACT:
+EXTRACT: 
+We pulled our data from the U.S. Energy Information Administration (eia). The eia has an entire section of data on U.S. electricity information including electric power plants, capacity, generation, fuel consumption, sales, prices and customers.
 
 TRANSFORM:
 state
