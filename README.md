@@ -17,17 +17,17 @@ EXTRACT:
 
 TRANSFORM:
 state
-    - created a state ID table with state name and state ID to use as primary keys and connect other databases
+- created a state ID table with state name and state ID to use as primary keys and connect other databases
 
 yearly_generation_pd
-    - Changed 'Generation (Megawatts)' column to float type
-    - Dropped rows with already calculated totals in the 'Energy Source' column
-    - Exported to CSV to import to Postgres
+- Changed 'Generation (Megawatts)' column to float type
+- Dropped rows with already calculated totals in the 'Energy Source' column
+- Exported to CSV to import to Postgres
 
 yearly_capacity_pd
-    - Changed NaN values in 'Generators' column to 0 where there were zero generators present initally in 1990. 
-    - Changed NaN values in "Facilities" column to 0 where there were zero facilities present in inital years (rows).
-    - Exported to CSV to import to Postgres
+- Changed NaN values in 'Generators' column to 0 where there were zero generators present initally in 1990. 
+- Changed NaN values in "Facilities" column to 0 where there were zero facilities present in inital years (rows).
+ - Exported to CSV to import to Postgres
 
 LOAD:
 
