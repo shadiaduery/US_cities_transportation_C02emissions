@@ -3,7 +3,7 @@
 Group Team Members: Anna Rischitelli, Priya Anulacharam, Nataliia Sokolova, Vincent Durcan, and Shadia Duery
 
 Datasources:
-- US Energy 
+- US Energy Information Administration
 
 Database Design:
 - Table 1: average price by sector (remember to remove the summary rows for the regions)
