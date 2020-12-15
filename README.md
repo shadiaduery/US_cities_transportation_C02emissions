@@ -2,21 +2,64 @@
 
 Group Team Members: Anna Rischitelli, Priya Anulacharam, Nataliia Sokolova, Vincent Durcan, and Shadia Duery
 
-Question: 
-1) What is a state's energy demand?
-2) What are the sources of energy per state being used? (Wind, coal, gas, solar, etc.)
-Bonus** 2A) How much of a state's energy requirements can be met by solar?
+Datasources:
 
-
+Database Design:
 - Table 1: average price by sector (remember to remove the summary rows for the regions)
 - Table 2: Annual monthly billing by state
 - Table 3: Nataliias data set
 - Table 4: State name and state ID
 
-Key points:
-- Demand overtime by sector
-- Type of energy sources over time
+Project Report:
+#Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.
 
+EXTRACT:
+
+TRANSFORM:
+state
+    - created a state ID table with state name and state ID to use as primary keys and connect other databases
+
+yearly_generation_pd
+    - Changed 'Generation (Megawatts)' column to float type
+    - Dropped rows with already calculated totals in the 'Energy Source' column
+    - Exported to CSV to import to Postgres
+
+yearly_capacity_pd
+    - Changed NaN values in 'Generators' column to 0 where there were zero generators present initally in 1990. 
+    - Changed NaN values in "Facilities" column to 0 where there were zero facilities present in inital years (rows).
+    - Exported to CSV to import to Postgres
+
+LOAD:
+
+Tools:
+- QuickDBD
+- Jupyter Notebooks
+- Postgres DB
+
+Key Terms:
+- Energy "Price" =  The average electricity rate is 13.19 cents per kilowatt hour (kWh). The average price a residential customer in the United States pays for electricity is 13.31 cents per kWh.
+
+- Energy "Load" = The load factor percentage is derived by dividing the total kilowatt-hours (kWh) consumed in a designated period by the product of the maximum demand in kilowatts (kW) and the number of hours in the period.
+
+- Energy "Reserves" = Calculated unused physical energy sources. Source examples are coal, gas, and oil. Known to exist with reasonable certainty.
+
+- Energy "Capacity Factors" = It basically measures how often a plant is running at maximum power. A plant with a capacity factor of 100% means it's producing power all of the time. Nuclear has the highest capacity factor of any other energy source—producing reliable, carbon-free power more than 92% of the time in 2016.
+
+- Nameplate capacity = also known as the rated capacity, nominal capacity, installed capacity, or maximum effect, is the intended full-load sustained output of a facility such as a power plant, electric generator, a chemical plant, fuel plant, metal refinery, mine, and many others.
+
+
+--------------------------------------------------------------------------
+Looking ahead...
+
+Our Database Design was chosen to help us answer these potential questions for Project #3: 
+
+1) What is a state's energy demand?
+2) What are the sources of energy per state being used? (Wind, coal, gas, solar, etc.)
+3) What is the current solar consumption and solar infrastructure per state?
+    3a) In a certain point in time, solar currently is providing _% of the current energy needs of these states?
+4) How much of a state's energy requirements can be met by solar?
+
+--------------------------------------------------------------------------
 
 Assignments for before Monday:
 - Update Readme (Anna)
@@ -33,61 +76,6 @@ For Monday:
 
 For Wednesday:
 - Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.
-
-
-
-
-Other notes:
-Goals:
- - % of total need can be provided by solar at the currently capacity
- Main (from Eric): How much of a state's energy requirements can be met by solar?
-    - State's current energy consumption 
-    - Current solar consumption per state
-    - Current solar infrastructure of the states
-    - In a point in time, solar currently is providing _% of the current energy needs of these states
-
-    - Monthy consumption per state by sector
-
--------------------------------------------
-Business Questions:
-
-Do rates of covid19 differ based on local policies implemented (where do we get data of locked down period)
-
-
-Steps for Project Completion:
-
-Datasources:
-
--John Hopkings University Covid19 data
--County information and landsize for population density calculations
-
-Data Analysis:
-
-- Timeframe: January - October
-- We will compare data by county from two States that we know applied different Covid19 lockdown policies: CA and TX
-- Rate of infection (covid cases per day)
-- Total number of covid19 cases per State per month
-- Heat map of COVID cases per county (per state)
-- Scatter plots that compare COVID per capita and population density by county (by state)
-
-
-Visualizations:
-
-- Heat Map 
-- Scatter plot to show log relationships for Total Cases for CA & TX vs. Time
-- Line graph of New Daily Cases for CA & TX vs. Time
-- Scatter plot for CA - Population Density vs. COVID Cases per Capita w/ linear regression 
-- Saatter plot for TX - Population Density vs. COVID Cases per Capita w/ linear regression
-
-Tools:
-
-- jupyter notebook
-- csv file
-- libraries
-- PGAdmin
-- PostgreSQL
-- 
-
 
 -----------------------------------------------------------------------
 
@@ -138,14 +126,5 @@ How to run your project - given your github repo, how would the instructional te
 The report is estimated to be 500 words or less and should be in the README of your github repo. Although each group will have a single repo, every group member must submit a link to Bootcampspot. No presentation and no presentation materials are required.
 
 
-Key Terms:
-
-Energy "Price" =  The average electricity rate is 13.19 cents per kilowatt hour (kWh). The average price a residential customer in the United States pays for electricity is 13.31 cents per kWh.
-
-Energy "Load" = The load factor percentage is derived by dividing the total kilowatt-hours (kWh) consumed in a designated period by the product of the maximum demand in kilowatts (kW) and the number of hours in the period.
-
-Energy "Reserves" = Calculated unused physical energy sources. Source examples are coal, gas, and oil. Known to exist with reasonable certainty.
-
-Energy "Capacity Factors" = It basically measures how often a plant is running at maximum power. A plant with a capacity factor of 100% means it's producing power all of the time. Nuclear has the highest capacity factor of any other energy source—producing reliable, carbon-free power more than 92% of the time in 2016.
 
 
