@@ -16,9 +16,9 @@ Project Report:
 *EXTRACT*: 
 We pulled our data from the U.S. Energy Information Administration (eia). The eia has an entire section of data on U.S. electricity information including electric power plants, capacity, generation, fuel consumption, sales, prices and customers. Both sets of data that we pulled from the eia were in CSV file formats. The first table (StateNameAndID.csv) was a manual creation where we tied two lists together to use as a key in our database design.
 
-TRANSFORM: 
-StateNameAndID.csv
-- created a state ID table with state name and state ID to use as primary keys and connect other databases
+*TRANSFORM*: After collecting the data, we had three tables that covered the data that we may need for Project #3. The first table (StateNameAndID.csv) was created to tie a state's name with a state's "ID" (ex: Oregon -> OR, Washington -> WA) to use as primary keys and connect our other tables.
+
+When we loaded the second CSV into Jupyter to work in Pandas, the second table (yearly_generation_pd) had individual summary rows in the initial dataframe in one columns: 'Generation (Megawatts)'. We
 
 yearly_generation_pd
 - Changed 'Generation (Megawatts)' column to float type
