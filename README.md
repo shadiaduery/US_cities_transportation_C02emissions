@@ -13,6 +13,11 @@ Database Design:
 Project Report:
 #Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.
 
+Tools:
+- QuickDBD
+- Jupyter Notebooks
+- Postgres DB
+
 --------------------------------------------------------------------------
 Looking ahead...
 
