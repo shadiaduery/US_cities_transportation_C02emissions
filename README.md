@@ -11,7 +11,7 @@ Group Team Members: Anna Rischitelli, Priya Anulacharam, Nataliia Sokolova, Vinc
 - Table 3: Existing Electrical Capacity (existcapacity_annual_clean.csv)
 
 ## Project Report**:
-#Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.
+*Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.*
 
 **EXTRACT**: 
 We pulled our data from the U.S. Energy Information Administration (eia). The eia has an entire section of data on U.S. electricity information including electric power plants, capacity, generation, fuel consumption, sales, prices and customers. Both sets of data that we pulled from the eia were in CSV file formats. The first table (StateNameAndID.csv) was a manual creation where we tied two lists together to use as a key in our database design.
@@ -20,13 +20,13 @@ We pulled our data from the U.S. Energy Information Administration (eia). The ei
 
 When we loaded the second CSV into Jupyter to work in Pandas, the second table (yearly_generation_pd) had individual summary rows in the initial dataframe in one columns: 'Energy Source' column. We had to identify and drop the rows with already calculated totals in the 'Energy Source' column using:
 
-yearly_generation_pd = yearly_generation_pd.loc[yearly_generation_pd["Energy Source"]!="Total"]
+`yearly_generation_pd = yearly_generation_pd.loc[yearly_generation_pd["Energy Source"]!="Total"]`
 
 This cleaned out the rows that were acting as sub-totals in our data. Also, we changed the data type in the 'Generation (Megawatts)' to float type so we can do accurate queries and calculations later. Lastyle, we exported to CSV to import into Postgress.
 
 When we loaded the third CSV into Jupyter, the third table (yearly_capacity_pd) had null values in place of 0's in multiple columns. In the columns 'Generators' and 'Facilities', there were NaN values where there were no generators or facilities present in the state during that year. Therefore, we changed the NaN values in 'Generators' column to 0 where there were zero generators present initally in 1990, and we changed NaN values in "Facilities" column to 0 where there were zero facilities present in inital years (rows). We used a line of code like this for the replacement: 
 
-yearly_capacity_pd['Generators'] = yearly_capacity_pd['Generators'].replace(np.nan, 0)
+`yearly_capacity_pd['Generators'] = yearly_capacity_pd['Generators'].replace(np.nan, 0)`
 
 Lastly, we exported to CSV to import to Postgres.
 
@@ -51,7 +51,7 @@ Lastly, we exported to CSV to import to Postgres.
 
 
 --------------------------------------------------------------------------
-###### Looking ahead...
+## Looking ahead...
 
 Our Database Design was chosen to help us answer these potential questions for Project #3: 
 
