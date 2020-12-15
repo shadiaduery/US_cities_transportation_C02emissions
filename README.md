@@ -13,21 +13,18 @@ Database Design:
 Project Report:
 #Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.
 
-----------
+--------------------------------------------------------------------------
 Looking ahead...
 
-Our Database Design was chosen to help us answer these potential questions for Project #3: 
-1) What is a state's energy demand?
+Our database design was assembled in this fashion to help us answer these potential questions for Project #3: 
+1) What is a state's energy demand by sector?
 2) What are the sources of energy per state being used? (Wind, coal, gas, solar, etc.)
-Bonus** 2A) How much of a state's energy requirements can be met by solar?
+3) What is current solar consumption and solar infrastructure per state?
+    3a) In a certain point in time, solar is providing _% of the current energy needs of these states?
+4) **How much of a state's energy requirements can be met by solar?
 
 
-
-
-Key points:
-- Demand overtime by sector
-- Type of energy sources over time
-
+--------------------------------------------------------------------------
 
 Assignments for before Monday:
 - Update Readme (Anna)
@@ -36,7 +33,6 @@ Assignments for before Monday:
 - Create example schema map for Monday (Priya)
 - Create Table 4 - State name and state ID (Vincent)
 
-
 For Monday:
 - Finalize database mapping (Monday together)
 - Get final tables created and loaded in Postgress
@@ -44,22 +40,6 @@ For Monday:
 
 For Wednesday:
 - Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.
-
-
-
-
-Other notes:
-Goals:
- - % of total need can be provided by solar at the currently capacity
- Main (from Eric): How much of a state's energy requirements can be met by solar?
-    - State's current energy consumption 
-    - Current solar consumption per state
-    - Current solar infrastructure of the states
-    - In a point in time, solar currently is providing _% of the current energy needs of these states
-
-    - Monthy consumption per state by sector
-
-
 
 -----------------------------------------------------------------------
 
