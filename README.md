@@ -18,19 +18,19 @@ We pulled our data from the U.S. Energy Information Administration (eia). The ei
 
 *TRANSFORM*: After collecting the data, we had three tables that covered the data that we may need for Project #3. The first table (StateNameAndID.csv) was created to tie a state's name with a state's "ID" (ex: Oregon -> OR, Washington -> WA) to use as primary keys and connect our other tables.
 
-When we loaded the second CSV into Jupyter to work in Pandas, the second table (yearly_generation_pd) had individual summary rows in the initial dataframe in one columns: 'Generation (Megawatts)'. We
+When we loaded the second CSV into Jupyter to work in Pandas, the second table (yearly_generation_pd) had individual summary rows in the initial dataframe in one columns: 'Energy Source' column. We had to identify and drop the rows with already calculated totals in the 'Energy Source' column using:
 
-yearly_generation_pd
-- Changed 'Generation (Megawatts)' column to float type
-- Dropped rows with already calculated totals in the 'Energy Source' column
-- Exported to CSV to import to Postgres
+yearly_generation_pd = yearly_generation_pd.loc[yearly_generation_pd["Energy Source"]!="Total"]
 
-yearly_capacity_pd
-- Changed NaN values in 'Generators' column to 0 where there were zero generators present initally in 1990. 
-- Changed NaN values in "Facilities" column to 0 where there were zero facilities present in inital years (rows).
- - Exported to CSV to import to Postgres
+This cleaned out the rows that were acting as sub-totals in our data. Also, we changed the data type in the 'Generation (Megawatts)' to float type so we can do accurate queries and calculations later. Lastyle, we exported to CSV to import into Postgress.
 
-LOAD: We loaded our three tables into Postgres using the query window and writing the code to create and populate the code.
+When we loaded the third CSV into Jupyter, the third table (yearly_capacity_pd) had null values in place of 0's in multiple columns. In the columns 'Generators' and 'Facilities', there were NaN values where there were no generators or facilities present in the state during that year. Therefore, we changed the NaN values in 'Generators' column to 0 where there were zero generators present initally in 1990, and we changed NaN values in "Facilities" column to 0 where there were zero facilities present in inital years (rows). We used a line of code like this for the replacement: 
+
+yearly_capacity_pd['Generators'] = yearly_capacity_pd['Generators'].replace(np.nan, 0)
+
+Lastly, we exported to CSV to import to Postgres.
+
+*LOAD*: We loaded our three tables into Postgres using the query window and writing the code to create and populate the code. Before adding the data to the tables in our schema, we used QuickDBD to map our tables and keys.
 
 
 Tools:
