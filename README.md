@@ -17,11 +17,12 @@ Project Report:
 Looking ahead...
 
 Our Database Design was chosen to help us answer these potential questions for Project #3: 
+
 1) What is a state's energy demand?
 2) What are the sources of energy per state being used? (Wind, coal, gas, solar, etc.)
-3)
+3) What is the current solar consumption and solar infrastructure per state?
+    3a) In a certain point in time, solar currently is providing _% of the current energy needs of these states?
 4) How much of a state's energy requirements can be met by solar?
-
 
 --------------------------------------------------------------------------
 
@@ -40,22 +41,6 @@ For Monday:
 
 For Wednesday:
 - Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.
-
-
-
-
-Other notes:
-Goals:
- - % of total need can be provided by solar at the currently capacity
- Main (from Eric): How much of a state's energy requirements can be met by solar?
-    - State's current energy consumption 
-    - Current solar consumption per state
-    - Current solar infrastructure of the states
-    - In a point in time, solar currently is providing _% of the current energy needs of these states
-
-    - Monthy consumption per state by sector
-
-
 
 -----------------------------------------------------------------------
 
