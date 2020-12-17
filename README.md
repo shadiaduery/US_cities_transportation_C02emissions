@@ -1,9 +1,9 @@
 ## bootcamp-group_project-2
 
-Group Team Members: Anna Rischitelli, Priya Anulacharam, Nataliia Sokolova, Vincent Durcan, and Shadia Duery
+Group Team Members: Anna Rischitelli, Priya Arunachalam, Nataliia Sokolova, Vincent Durcan, and Shadia Duery
 
 ###### Datasources:
-- US Energy Information Administration
+- US Energy Information Administration (https://www.eia.gov/electricity/data.php)
 
 ###### Database Design:
 - Table 1: State Name and State ID (StateNameAndID.csv)
@@ -11,7 +11,7 @@ Group Team Members: Anna Rischitelli, Priya Anulacharam, Nataliia Sokolova, Vinc
 - Table 3: Existing Electrical Capacity (existcapacity_annual_clean.csv)
 
 ## Project Report:
-*Complete write up: How to run your project - given your github repo, how would the instructional team recreate the final databases on their own computers? The report is estimated to be 500 words or less and should be in the README of your github repo.*
+For this project (and next project) we are looking to analyze energy usage across different states, sectors, and energy type. Below is an outline of each step of our ETL process, along with a summary of potental questions for Project #3.
 
 **EXTRACT**: 
 We pulled our data from the U.S. Energy Information Administration (eia). The eia has an entire section of data on U.S. electricity information including electric power plants, capacity, generation, fuel consumption, sales, prices and customers. Both sets of data that we pulled from the eia were in CSV file formats. The first table (StateNameAndID.csv) was a manual creation where we tied two lists together to use as a key in our database design.
@@ -32,14 +32,17 @@ Lastly, we exported to CSV to import to Postgres.
 
 **LOAD**: We loaded our three tables into Postgres using the query window and writing the code to create and populate the code. Before adding the data to the tables in our schema, we used QuickDBD to map our tables and keys.
 
+We realized after a couple test queries that we would like to go a little deeper to find the sectors/users of this energy. Another issue that we ran into was that with our current datasets, there aren't clear connections between the tables to create primary keys. This can be addressed in Project #3 when we determine exactly what questions we are answering and what data we will need to process.
+
 **GROUP SUMMARY**:
-We worked together on a group for 90% of this project - we were extremely efficient with our time by having one person share their screen and then we all talked through the problems and the data cleaning.
+We worked together as a group for 90% of this project - we were extremely efficient with our time by having one person share their screen and then we all talked through the problems and the data cleaning and that's why there are only a few commits from a couple people.
 
 
 ## Tools:
 - QuickDBD
 - Jupyter Notebooks
 - Postgres DB
+
 
 ## Key Terms:
 - Energy "Price" =  The average electricity rate is 13.19 cents per kilowatt hour (kWh). The average price a residential customer in the United States pays for electricity is 13.31 cents per kWh.
@@ -70,6 +73,5 @@ To answer this question, we would need these data sets and analysis:
 1. Current energy needs by the city of Portland (energy demand)
 2. Energy sources available in the city to identity the renewable energy sources
 3. Determine to max capacity that these renewable energies sources can run to paired with temporal data (how much energy can be produce by energy source, and when)
-5:58
 4. Calculate how much of the total energy consumption needs could be met by a mix of renewable energy sources
 --------------------------------------------------------------------------
