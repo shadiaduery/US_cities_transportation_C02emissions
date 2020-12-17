@@ -32,6 +32,9 @@ Lastly, we exported to CSV to import to Postgres.
 
 **LOAD**: We loaded our three tables into Postgres using the query window and writing the code to create and populate the code. Before adding the data to the tables in our schema, we used QuickDBD to map our tables and keys.
 
+**GROUP SUMMARY**:
+We worked together on a group for 90% of this project - we were extremely efficient with our time by having one person share their screen and then we all talked through the problems and the data cleaning.
+
 
 ## Tools:
 - QuickDBD
@@ -61,4 +64,12 @@ Our Database Design was chosen to help us answer these potential questions for P
     3a) In a certain point in time, solar currently is providing _% of the current energy needs of these states?
 4) How much of a state's energy requirements can be met by solar?
 
+Our second plan for Project #3 is to potentially answer this question: Is it currently possible to power the city of Portland with only renewable energy for a week, or a month?
+
+To answer this question, we would need these data sets and analysis:
+1. Current energy needs by the city of Portland (energy demand)
+2. Energy sources available in the city to identity the renewable energy sources
+3. Determine to max capacity that these renewable energies sources can run to paired with temporal data (how much energy can be produce by energy source, and when)
+5:58
+4. Calculate how much of the total energy consumption needs could be met by a mix of renewable energy sources
 --------------------------------------------------------------------------
