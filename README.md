@@ -1,4 +1,4 @@
-## bootcamp-group_project-2
+## Study on top 50 larges cities in the US and its transportation carbon emissions
 
 Group Team Members: Anna Rischitelli, Priya Arunachalam, Nataliia Sokolova, Vincent Durcan, and Shadia Duery
 
